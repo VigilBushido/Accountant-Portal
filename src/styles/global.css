@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+    --font-display: "consolas", "monospace";
+
+    --breakpoint-3x1: 1920px;
+
+    /* ... */
+}
