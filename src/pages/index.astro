@@ -1,18 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import logo from '../../src/images/logo.png';
 ---
 <Layout title="Home">
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.js"
-			integrity="sha512-BJ/5sR2hFxQTKin/55JQCcMTObShDBAmVjL/3NR/MVcrhyOazJjAgvROem03+HYyGw16SVdSfoWCFGr9syxAKA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Taxes & Corporate Accountant Blog</title>
 		</head>
 	<body class="">
@@ -21,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
 			class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
 		>
 			<a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-				<img src="images/logo.png" class="h-14" alt="FinancePeople Logo" />
+				<Image src={logo} class="h-14" alt="FinancePeople Logo" width={55} height={55} />
 				<span
 					class="self-center text-2xl font-semibold whitespace-nowrap"
 				><span class="text-indigo-400">Finance</span>People</span
@@ -53,7 +49,7 @@ import Layout from '../layouts/Layout.astro';
 			</button>
 			<div class="hidden w-full md:block md:w-auto" id="navbar-default">
 				<ul
-					class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 text-white rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-gray-700"
+					class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 text-white rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
 				>
 					<li>
 						<a
@@ -128,7 +124,7 @@ import Layout from '../layouts/Layout.astro';
 			<!-- Most Recent Article -->
 			<div class="relative inline-block w-full sm:w-auto cursor-pointer rounded-2xl">
 				<a href="article.html">
-					<img src="images/image1.png" alt="Article Image" class="w-full h-auto rounded-2xl" />
+					<img src="/images/image1.png" alt="Article Image" class="w-full h-auto rounded-2xl" />
 
 					<div
 						class="absolute inset-0 flex flex-col items-center justify-center bg-black opacity-80 hover:opacity-75 transition duration-300 ease-in-out text-white text-center rounded-2xl"
@@ -163,7 +159,7 @@ import Layout from '../layouts/Layout.astro';
 				<div class="bg-white rounded-lg overflow-hidden shadow-lg">
 					<a href="article.html">
 						<img
-							src="images/image2.png"
+							src="/images/image2.png"
 							alt="Article Image"
 							class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
 						/>
@@ -192,7 +188,7 @@ import Layout from '../layouts/Layout.astro';
 				<div class="bg-white rounded-lg overflow-hidden shadow-lg">
 					<a href="article.html">
 						<img
-							src="images/image3.png"
+							src="/images/image4.png"
 							alt="Article Image"
 							class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
 						/>
@@ -221,7 +217,7 @@ import Layout from '../layouts/Layout.astro';
 				<div class="bg-white rounded-lg overflow-hidden shadow-lg">
 					<a href="article.html">
 						<img
-							src="images/image4.png"
+							src="/images/image2.png"
 							alt="Article Image"
 							class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
 						/>
@@ -234,7 +230,7 @@ import Layout from '../layouts/Layout.astro';
 						<div class="flex flex-wrap gap-2">
                 <span
 					class="px-2 py-1 bg-blue-500 text-white rounded-full text-xs hover:opacity-90"
-				><a href="">Applephones</a></span
+				><a href="">Calculators</a></span
 				>
 							<span
 								class="px-2 py-1 bg-purple-500 text-white rounded-full text-xs hover:opacity-90"
@@ -250,7 +246,7 @@ import Layout from '../layouts/Layout.astro';
 				<div class="bg-white rounded-lg overflow-hidden shadow-lg">
 					<a href="article.html">
 						<img
-							src="images/image5.png"
+							src="/images/image1.png"
 							alt="Article Image"
 							class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
 						/>
@@ -263,7 +259,7 @@ import Layout from '../layouts/Layout.astro';
 						<div class="flex flex-wrap gap-2">
                 <span
 					class="px-2 py-1 bg-blue-500 text-white rounded-full text-xs hover:opacity-90"
-				><a href="">Drones</a></span
+				><a href="">InterestRates</a></span
 				>
 							<span
 								class="px-2 py-1 bg-purple-500 text-white rounded-full text-xs hover:opacity-90"
@@ -279,7 +275,7 @@ import Layout from '../layouts/Layout.astro';
 				<div class="bg-white rounded-lg overflow-hidden shadow-lg">
 					<a href="article.html">
 						<img
-							src="images/image6.png"
+							src="/images/image2.png"
 							alt="Article Image"
 							class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
 						/>
@@ -308,7 +304,7 @@ import Layout from '../layouts/Layout.astro';
 				<div class="bg-white rounded-lg overflow-hidden shadow-lg">
 					<a href="article.html">
 						<img
-							src="images/image7.png"
+							src="/images/image7.png"
 							alt="Article Image"
 							class="w-full h-48 object-cover hover:opacity-75 transition duration-300 ease-in-out"
 						/>
@@ -334,7 +330,7 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 			</div>
 		</div>
-		</div>
+		</section>
 
 		<footer class="bg-indigo-900 text-white">
 			<div class="container mx-auto mt-10 max-w-screen-xl px-8">
@@ -394,6 +390,9 @@ import Layout from '../layouts/Layout.astro';
 								<a href="#">Instagram</a>
 							</li>
 						</ul>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</body>
 	</html>
