@@ -7,6 +7,10 @@ import Footer from '../Components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../pages/constants';
 
 const { title = 'Taxes & Corporate Accountant Blog' } = Astro.props;
+
+interface Props {
+    title?: string;
+}
 ---
 
     <!DOCTYPE html>
