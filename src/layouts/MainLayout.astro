@@ -2,6 +2,7 @@
 import './src/styles/global.css'
 import { Image } from 'astro:assets';
 import logo from '../../src/images/logo.png';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../pages/constants';
 
 const { title = 'Taxes & Corporate Accountant Blog' } = Astro.props;
 ---
@@ -11,7 +12,8 @@ const { title = 'Taxes & Corporate Accountant Blog' } = Astro.props;
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>{title}</title>
+        <meta name="description" content={SITE_DESCRIPTION}/>
+        <title>{SITE_TITLE} - {title}</title>
     </head>
     <body class="">
     <nav class="bg-gray-900 text-white">
