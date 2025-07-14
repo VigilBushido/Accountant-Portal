@@ -13,21 +13,21 @@ interface Props {
 }
 ---
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content={SITE_DESCRIPTION}/>
-        <title>{SITE_TITLE} - {title}</title>
-    </head>
-    <body class="">
-    <Navbar />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content={SITE_DESCRIPTION}/>
+    <title>{SITE_TITLE} - {title}</title>
+</head>
+<body class="">
+<Navbar />
 
-    <section class="container mx-auto max-w-screen-xl mt-10 px-8">
-        <slot />
-    </section>
+<section class="container mx-auto max-w-screen-xl mt-10 px-8">
+    <slot />
+</section>
 
-    <Footer />
-    </body>
-    </html>
+<Footer />
+</body>
+</html>
