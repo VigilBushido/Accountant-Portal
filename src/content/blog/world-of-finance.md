@@ -1,6 +1,6 @@
 ---
 title: 'Soaring to New Heights: The World of finance'
-pubDate: 2024-01-16
+pubDate: 2025-01-16
 author: 'Sarah Watson'
 image: 'image7.png'
 tags: ['finance', 'theory', 'investing']
