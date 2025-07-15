@@ -5,13 +5,18 @@
     "**/*"
   ],
   "exclude": [
-    "dist"
+    "dist",
+    "node_modules",
+    "src/pages/articles/[...slug].astro",
+    "src/pages/articles/_[...slug].astro",
+    "src/components/ArticleCard.astro",
+    "src/components/MostRecentArticle.astro",
   ],
   "compilerOptions": {
     "plugins": [
       {
         "name": "@astrojs/ts-plugin"
-      },
-    ],
+      }
+    ]
   }
 }

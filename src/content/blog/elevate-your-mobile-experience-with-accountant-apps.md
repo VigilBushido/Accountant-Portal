@@ -1,6 +1,6 @@
 ---
 title: 'Elevate Your Mobile Experience with Finance Apps'
-pubDate: 2025-01-17
+pubDate: 2025-01-23
 author: 'Robert Lane'
 image: 'image4.png'
 tags: ['Finance Apps', 'smartphones', 'mobile']
