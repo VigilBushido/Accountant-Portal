@@ -8,6 +8,7 @@ const { article } = Astro.props;
 export interface Props {
     article: CollectionEntry<'blog'>;
 }
+console.log(article.data.pubDate);
 ---
 
 <!-- Most Recent Article -->
