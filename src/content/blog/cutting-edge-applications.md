@@ -3,7 +3,7 @@ title: 'Unleash Creativity With These Cutting-Edge Finance Apps'
 pubDate: 2025-01-14
 author: 'Timmy McDonald'
 image: 'image7.png'
-tags: ['Finance Apps', 'gadgets']
+tags: ['financeApps', 'gadgets']
 slug: unleash-creativity-with-these-cutting-edge-finance-apps
 ---
 

@@ -3,7 +3,7 @@ title: "Capturing Life's Moments with Excellence"
 pubDate: 2025-01-15
 author: 'Janet Donald'
 image: 'image2.png'
-tags: ['budget', 'finance', 'excellence']
+tags: ['theory', 'finance', 'investing']
 slug: capturing-life-moments-with-excellence
 ---
 
