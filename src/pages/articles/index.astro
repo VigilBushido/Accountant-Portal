@@ -3,11 +3,15 @@ import MainLayout from '../../layouts/MainLayout.astro';
 import ArticleCard from "../../components/ArticleCard.astro";
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
+import {ARTICLES_PER_PAGE} from "../../constants";
 import SearchForm from "../../components/SearchForm.astro";
 import Pagination from "../../components/Pagination.astro";
 
 const allBlogArticles: CollectionEntry<'blog'>[] = (await getCollection('blog'))
     .sort((a:CollectionEntry<'blog'>, b:CollectionEntry<'blog'>) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const totalPages = Math.ceil(allBlogArticles.length / ARTICLES_PER_PAGE);
+console.log(totalPages);
 ---
 
 <MainLayout title="All Articles">
