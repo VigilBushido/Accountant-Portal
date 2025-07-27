@@ -11,7 +11,7 @@ const allBlogArticles: CollectionEntry<'blog'>[] = (await getCollection('blog'))
     .sort((a:CollectionEntry<'blog'>, b:CollectionEntry<'blog'>) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const totalPages = Math.ceil(allBlogArticles.length / ARTICLES_PER_PAGE);
-console.log(totalPages);
+//console.log(totalPages);
 ---
 
 <MainLayout title="All Articles">
@@ -27,7 +27,7 @@ console.log(totalPages);
                 <ArticleCard article={article} />
             ))}
         </div>
-        <Pagination currentPage={1} totalPages={2}/>
+        <Pagination currentPage={1} totalPages={totalPages}/>
 
     </section>
 </MainLayout>
