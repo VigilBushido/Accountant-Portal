@@ -14,6 +14,7 @@ const allBlogArticles: CollectionEntry<'blog'>[] = (await getCollection('blog'))
 
 const totalPages = Math.ceil(allBlogArticles.length / ARTICLES_PER_PAGE);
 
+const articlesForPage: CollectionEntry<'blog'>[] = allBlogArticles.slice((currentPage - 1) * ARTICLES_PER_PAGE, currentPage * ARTICLES_PER_PAGE);
 ---
 
 <MainLayout title="All Articles">
@@ -25,7 +26,7 @@ const totalPages = Math.ceil(allBlogArticles.length / ARTICLES_PER_PAGE);
         <br>
         <!-- Main Grid -->
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {allBlogArticles.map(article => (
+            {articlesForPage.map(article => (
                 <ArticleCard article={article} />
             ))}
         </div>
