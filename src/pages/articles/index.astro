@@ -7,11 +7,13 @@ import {ARTICLES_PER_PAGE} from "../../constants";
 import SearchForm from "../../components/SearchForm.astro";
 import Pagination from "../../components/Pagination.astro";
 
+const currentPage: number | null = 1 || +Astro.url.searchParams.get('page');
+
 const allBlogArticles: CollectionEntry<'blog'>[] = (await getCollection('blog'))
     .sort((a:CollectionEntry<'blog'>, b:CollectionEntry<'blog'>) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const totalPages = Math.ceil(allBlogArticles.length / ARTICLES_PER_PAGE);
-//console.log(totalPages);
+
 ---
 
 <MainLayout title="All Articles">
@@ -27,7 +29,7 @@ const totalPages = Math.ceil(allBlogArticles.length / ARTICLES_PER_PAGE);
                 <ArticleCard article={article} />
             ))}
         </div>
-        <Pagination currentPage={1} totalPages={totalPages}/>
+        <Pagination currentPage={currentPage} totalPages={totalPages}/>
 
     </section>
 </MainLayout>
