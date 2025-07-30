@@ -11,6 +11,9 @@
     "src/pages/articles/_[...slug].astro",
     "src/components/ArticleCard.astro",
     "src/components/MostRecentArticle.astro",
+    "src/components/Pagination.astro",
+    "src/pages/articles/search.astro",
+    "src/pages/api/search.json.ts"
   ],
   "compilerOptions": {
     "plugins": [

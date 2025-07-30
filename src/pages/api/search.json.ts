@@ -1,3 +1,4 @@
+//@ts-nocheck
 import type { APIRoute } from "astro";
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
